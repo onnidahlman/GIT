@@ -1,3 +1,10 @@
 git checkout main
 git pull origin main  # Varmista, että päähaara on ajan tasalla
 git checkout -b feature/create-awesome
+git add hello_world.py
+git commit -m "Add greeting in feature"
+git push origin feature/create-awesome
+git checkout -b release feature/create-awesome
+git add hello_world.py
+git commit -m "Add greeting in release"
+git push origin release
