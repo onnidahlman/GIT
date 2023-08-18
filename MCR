@@ -1,0 +1,7 @@
+git remote add uusi-etä https://course-gitlab.tuni.fi/git-course/intermediate-merge-conflict.git
+git fetch uusi-etä
+git merge uusi-etä/main --allow-unrelated-histories
+print("Hello from main")  # Muutos rivillä 2
+print("Modified by feature/modify-print")  # Muutos rivillä 3
+git commit -m "Fix merge conflicts"
+git push uusi-etä main
