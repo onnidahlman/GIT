@@ -1,0 +1,5 @@
+git remote add uusi-etä https://course-gitlab.tuni.fi/git-course/intermediate-normal-merge.git
+git fetch uusi-etä
+git merge uusi-etä/feature/add-logging --allow-unrelated-histories
+git commit -m "Merge branch 'feature/add-logging'"
+git push uusi-etä main
