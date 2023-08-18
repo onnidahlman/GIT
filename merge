@@ -1,10 +1,7 @@
 git config pull.rebase false
-git remote add new-origin https://course-gitlab.tuni.fi/git-course/basics-materials.git
-git fetch new-origin
-git merge new-origin/master --allow-unrelated-histories
-git add .
-git commit -m "Resolved merge conflicts"
-git push origin main
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git pull new-origin master --allow-unrelated-histories
+git checkout basics/mergesort.py
+git add mergesort.py
+git commit -m "Recovered version of mergesort.py"
+git push origin master
 
