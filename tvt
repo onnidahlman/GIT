@@ -1,0 +1,7 @@
+git remote add upstream https://course-gitlab.tuni.fi/git-course/intermediate-branches.git
+git fetch upstream
+git checkout -b merge-upstream
+git merge upstream/main --allow-unrelated-histories
+git commit -m "Merge upstream/main into merge-upstream"
+git checkout main
+git merge merge-upstream
