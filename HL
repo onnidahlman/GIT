@@ -1,3 +1,4 @@
+git config pull.rebase false
 git remote add uusi-etä https://course-gitlab.tuni.fi/git-course/intermediate-branches.git
 git fetch uusi-etä
 git merge uusi-etä/main --allow-unrelated-histories
