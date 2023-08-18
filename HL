@@ -1,0 +1,11 @@
+git remote add uusi-etä https://course-gitlab.tuni.fi/git-course/intermediate-branches.git
+git fetch uusi-etä
+git merge uusi-etä/main --allow-unrelated-histories
+git checkout -b feature/create-awesome
+git add hello_world.py
+git commit -m "Add print statement in feature"
+git push uusi-etä feature/create-awesome
+git checkout -b release
+git add hello_world.py
+git commit -m "Add print statement in release"
+git push uusi-etä release
