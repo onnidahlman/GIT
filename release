@@ -1,4 +1,0 @@
-git remote add etatietovarasto https://course-gitlab.tuni.fi/git-course/intermediate-branches.git
-git fetch etatietovarasto
-git merge --allow-unrelated-histories etatietovarasto/main
-
