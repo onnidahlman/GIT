@@ -1,4 +1,4 @@
 git remote add basics-materials https://course-gitlab.tuni.fi/git-course/basics-materials.git
 git fetch basics-materials
-git merge basics/mergesort.py --allow-unrelated-histories
+git merge basics-materials/master --allow-unrelated-histories
 git checkout basics/mergesort.py -- mergesort.py
